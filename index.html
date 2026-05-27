@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MyPass turns normal interests into investor-grade personality debt.">
+  <title>MyPass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to MyPass</a>
+
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot-card">
+      <p class="boot-kicker">MY PASS BIOS v0.404</p>
+      <h1>Calibrating authenticity debt...</h1>
+      <div class="boot-bar"><span></span></div>
+      <p class="boot-line">Loading humility drivers, portfolio varnish, snackable trauma.</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">MP</span>
+      <div>
+        <strong>MyPass</strong>
+        <small>Identity ops for loud potential.</small>
+      </div>
+    </div>
+    <nav aria-label="MyPass apps">
+      <a href="#profile">Profile</a>
+      <a href="#optimizer">Optimizer</a>
+      <a href="#deck">Deck</a>
+      <a href="#guestbook">Guestbook</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="motionToggle" type="button" aria-pressed="false" title="Reduce motion">M</button>
+      <button class="icon-btn" id="resetButton" type="button" title="Reset profile">R</button>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow">Passion-as-a-Service</p>
+        <h1 id="heroTitle">Turn interests into investor-grade personality debt.</h1>
+        <p class="hero-text">MyPass converts hobbies, work, and minor emotional weather into profile copy, fake traction, founder badges, and a public aura nobody asked for.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#profile">Optimize me</a>
+          <button class="secondary-action" id="chaosButton" type="button">Increase sincerity</button>
+        </div>
+      </div>
+      <div class="monitor" aria-label="Live MyPass terminal">
+        <div class="monitor-header">
+          <span></span><span></span><span></span>
+          <strong>passionctl</strong>
+        </div>
+        <div class="terminal" id="terminalLog" aria-live="polite">
+          <p><span>$</span> boot mypass --human=false</p>
+          <p><span>ok</span> authenticity compiled with warnings</p>
+          <p><span>ok</span> humility set to enterprise</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="desktop" aria-label="MyPass desktop">
+      <div class="desktop-grid">
+        <article class="window profile-window" id="profile">
+          <div class="window-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <strong>profile.factory</strong>
+          </div>
+          <form id="profileForm" class="profile-form">
+            <label>
+              Name
+              <input id="nameInput" name="name" autocomplete="name" value="Frank" maxlength="30">
+            </label>
+            <label>
+              Thing you care about
+              <input id="passionInput" name="passion" value="making websites too hard" maxlength="80">
+            </label>
+            <label>
+              Current title
+              <input id="roleInput" name="role" value="independent internet problem" maxlength="60">
+            </label>
+            <label>
+              Vibe
+              <select id="vibeInput" name="vibe">
+                <option value="sincere">sincere weapon</option>
+                <option value="founder">founder fog</option>
+                <option value="wellness">wellness spreadsheet</option>
+                <option value="creator">creator economy wound</option>
+                <option value="academic">committee with teeth</option>
+              </select>
+            </label>
+            <label>
+              Shame tolerance
+              <input id="shameInput" name="shame" type="range" min="1" max="10" value="7">
+            </label>
+            <button class="primary-action wide" type="submit">Generate public self</button>
+          </form>
+        </article>
+
+        <article class="window output-window" aria-labelledby="publicProfileTitle">
+          <div class="window-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <strong>public.self</strong>
+          </div>
+          <div class="profile-card">
+            <div class="avatar" id="avatar">FP</div>
+            <div>
+              <p class="tiny-label">Certified Passion Liability</p>
+              <h2 id="publicProfileTitle">Frank helps websites become personal mythology.</h2>
+              <p id="publicBio">Making websites too hard becomes a humane infrastructure practice once you add enough capital letters.</p>
+            </div>
+            <div class="badge-row" id="badgeRow" aria-label="Badges"></div>
+            <dl class="metrics" id="metrics"></dl>
+          </div>
+        </article>
+
+        <article class="window optimizer-window" id="optimizer">
+          <div class="window-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <strong>authenticity.optimizer</strong>
+          </div>
+          <div class="optimizer-panel">
+            <div>
+              <p class="tiny-label">Current toxicity</p>
+              <meter id="toxicityMeter" min="0" max="100" value="34"></meter>
+              <strong id="toxicityLabel">34% discoverable, still legally human</strong>
+            </div>
+            <button class="danger-action" id="optimizeButton" type="button">Optimize authenticity</button>
+            <button class="secondary-action" id="copyButton" type="button">Copy profile sludge</button>
+          </div>
+          <ol class="audit-log" id="auditLog" aria-live="polite"></ol>
+        </article>
+
+        <article class="window comedy-window">
+          <div class="window-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <strong>ComedyBot.findComedy()</strong>
+          </div>
+          <div class="bot-face" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+          <div id="jokeVariants" class="joke-variants" aria-live="polite"></div>
+          <button class="secondary-action wide" id="rerollButton" type="button">Reroll scalable humor</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="modules" aria-label="MyPass apps">
+      <article class="app-panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Portfolio Launderer</p>
+          <h2>Convert tiny work into institutional fog.</h2>
+        </div>
+        <div class="launderer">
+          <textarea id="rawWorkInput" rows="4">made a todo app and forgot the password reset page</textarea>
+          <button class="primary-action" id="launderButton" type="button">Launder impact</button>
+          <div class="receipt" id="caseStudy"></div>
+        </div>
+      </article>
+
+      <article class="app-panel top-eight-panel">
+        <div class="panel-heading">
+          <p class="eyebrow">Top 8 Passions</p>
+          <h2>Rank your inner liabilities.</h2>
+        </div>
+        <ul id="topEight" class="top-eight" aria-label="Draggable passions"></ul>
+        <p class="drag-note" id="dragNote" aria-live="polite">Drag cards. Ranking humility first triggers compliance concerns.</p>
+      </article>
+
+      <article class="app-panel" id="deck">
+        <div class="panel-heading">
+          <p class="eyebrow">Investor Mode</p>
+          <h2>Your hobby, now threatening a market.</h2>
+        </div>
+        <div class="deck" id="deckOutput"></div>
+        <button class="danger-action" id="deckButton" type="button">Generate deck allergy</button>
+      </article>
+
+      <article class="app-panel" id="guestbook">
+        <div class="panel-heading">
+          <p class="eyebrow">Guestbook 2.0</p>
+          <h2>Leave normal praise. Receive brand damage.</h2>
+        </div>
+        <form id="guestbookForm" class="guestbook-form">
+          <input id="guestName" placeholder="name" maxlength="32" aria-label="Guest name">
+          <input id="guestMessage" placeholder="lol nice site" maxlength="120" aria-label="Guest message">
+          <button class="primary-action" type="submit">Sign with leverage</button>
+        </form>
+        <div id="guestbookEntries" class="guestbook-entries" aria-live="polite"></div>
+      </article>
+    </section>
+
+    <section class="share-strip" aria-label="Share">
+      <div>
+        <p class="eyebrow">Export Shame</p>
+        <h2>Your personality is now portable.</h2>
+      </div>
+      <div class="share-actions">
+        <button class="secondary-action" id="shareButton" type="button">Copy share link</button>
+        <button class="secondary-action" id="downloadButton" type="button">Download badge</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>MyPass makes no claim your passion is real. It only certifies market readiness.</p>
+    <p id="visitorCounter">Visitors optimized: 1</p>
+  </footer>
+
+  <template id="entryTemplate">
+    <article class="guest-entry">
+      <strong></strong>
+      <p></p>
+      <small></small>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
